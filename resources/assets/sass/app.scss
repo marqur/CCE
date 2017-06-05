@@ -1,0 +1,754 @@
+
+
+@font-face {
+    font-family: Gothic;
+    src: url('/fonts/GOTHIC.TTF');
+}
+
+
+
+
+
+.body-bg {
+	font-family: Gothic !important;
+	background-image: url('storage/images/BG1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+
+
+// Variables
+$nice-color : #128AB3;
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+.logo {
+	width: 220px;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #1d6bba;
+    font-family: Gothic;
+    font-size: 1em;
+    
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #577ea5;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #577ea5;
+    background-color: #1d71b8;
+}
+
+
+.dropdown-menu li a {
+	color: #1d6bba;
+    font-family: Gothic;
+    font-size: 1em;
+    
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+
+
+.btn-default {
+	border: 1px solid #1d6bba;
+	border-radius: 0px;
+	font-style: italic;
+	background-color: #1d6bba;
+	color: white;
+	font-size: 1em;
+	font-family: Gothic;
+	transition: background-color 0.5s ease;
+}
+
+.btn-default:hover, .btn-default:focus {
+	border: 1px solid #1d6bba;
+	background-color: #c0ccd8;
+	transition: background-color 0.5s ease;
+	color: #1d6bba;
+}
+
+input[type="text"], input[type="email"]  {
+	border: 1px solid #1d6bba;
+	border-radius: 0px;
+	width: 50;
+
+}
+
+#textarea {
+	border-radius: 0px;
+	height: 140px;
+	padding: 0.4em 0.4em 0.4em 0;
+    width: 250px;
+    resize: both;
+    overflow: auto;
+    border: 1px solid #1d6bba;
+}
+
+@media screen and (min-width: 768px) {
+	.btn-search {
+	margin-left: -43px;
+}
+}
+
+.glyphicon-chevron-down {
+	font-size: 0.8em;
+	padding-left: 5px;
+} 
+
+.glyphicon-chevron-right {
+	font-size: 0.8em;
+	padding-left: 5px;
+}
+
+#flag {
+	width: 23px;
+}
+
+
+
+/*   end nav */
+
+/* home */
+
+
+.home {
+	padding-bottom: 80px;
+}
+
+
+
+.cont {
+	opacity: 0.6;
+	padding-top: 100px;
+	display: block;
+    margin: 0 auto;	
+}
+
+
+
+
+.background {
+	height: 300px;
+}
+
+.background h1 {
+	font-size: 3.5em;
+	color: white;
+	text-align: left;
+	padding-left: 0;
+	padding-top: 50px;
+	font-weight: bold;
+}
+
+#h12 {
+	font-size: 0.5em;
+	color: white;
+}
+
+
+
+.res-title {
+	display: none;
+}
+
+.res-bg {
+	display: none;
+}
+
+@media screen and (max-width: 769px) {
+	body {
+		background-color:#E3E3E3;
+	}
+
+	.body-bg {
+		background: none;
+	}
+
+
+	.navbar {
+    position: absolute !important;
+    top: 0px !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+	
+
+
+	.logo {
+	width: 190px;
+}
+
+
+	.background {
+		display: none;
+	}
+	.res-bg {
+		display: block;
+		background: linear-gradient(141deg, #1d6bba 0%, #c0ccd8 100%);
+	}
+
+	.res-bg h1 {
+		margin-left: 3%;
+		padding-top: 40%;
+		padding-bottom: 40%;
+		color: white;
+		font-family: Gothic;
+	}
+	
+	.res-title {
+	color: white !important;
+	font-size: 2em;
+	display: block;
+	font-family: Gothic;
+	text-align: left;
+	margin-left: 5%;
+	margin-top: 20%;
+}
+	.res-header {
+	color: #c0ccd8;
+	font-size: 1.3em;
+	font-family: Gothic;
+	text-align: left;
+	margin-left: 5%;
+}
+
+	
+	.right-imprint,
+	.left-imprint {
+	display: none !important;
+}
+	.about-home, .exp-home .support-home, .service-home, .values-home{
+		background-color: white !important;
+		text-align: left !important;
+	}
+
+	.center-ser h2, .center-exp h2, .about-home h2, .support-home h2, .service-home h2, .values-home h4 {
+		width: 100% !important;
+		padding: 40px 0 40px 0 !important;
+		text-align:center !important;
+		margin: 0 !important;
+	}
+
+	.center-exp p, .about-home p, .support-home p, .service-home p, .values-home p {
+		width: 100% !important;
+		padding-bottom: 5% !important;
+		padding: 0 0 40px 0 !important;
+		text-align:center !important;
+		margin: 0 !important;
+	}
+
+	.exp-home hr, .about-home hr, .support-home hr, .service-home hr, .values-home hr {
+		display: none !important;
+	}
+
+	.body-story {
+		background-color: white;
+	}
+
+	.stories-bg {
+		background-color: white !important;
+	}
+	.btn-services {
+		margin-bottom: 0px !important;
+	}
+
+}
+
+@media screen and (min-width:1024px) and (max-width: 1640px) {
+	.about-home {
+	margin-top: 15% !important;
+}
+	.background h1 {
+	font-size: 3em;
+	color: white;
+	text-align: left;
+	padding-left: 0;
+	padding-top: 40px;
+	font-weight: bold;
+}
+}
+
+@media screen and (min-width:770px) and (max-width: 1024px) {
+	.about-home {
+	margin-top: 15% !important;
+}
+	.background h1 {
+	font-size: 2em;
+	color: white;
+	text-align: left;
+	padding-left: 0;
+	padding-top: 40px;
+	font-weight: bold;
+}
+}
+
+/* --------------- */
+
+
+.about-home {
+	margin-top: 20%;
+	opacity: 0.92;
+}
+
+
+
+.center-about {
+	background-color: #1d6bba;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-top: 10px solid white;
+}
+
+.center-about h2 {
+	color: white;
+	font-size: 2.3em;
+	font-family: Gothic;
+	width: 70%;
+	padding: 10% 0 0 10%;
+}
+.center-about p {
+	color: white;
+	font-size: 1.4em;
+	font-family: Gothic;
+	width: 70%;
+	padding: 10px 5px 10% 10%;
+}
+
+.center-about hr {
+	margin-left: 10%;
+	width: 3%;
+	border: 3px solid white;
+}
+
+
+/* ---------------- */
+
+
+
+
+.center-exp {
+	background-color: #c0ccd8;
+	text-align: right;
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	opacity: 0.92;
+}
+
+.center-exp h2 {
+	display: block;
+	color: #1d6bba;
+	font-size: 2.3em;
+	font-family: Gothic;
+	padding: 10% 10% 0 0;
+	width: 70%;
+	margin-left: 30%;
+}
+.center-exp p {
+	display: block;
+	color: #1d6bba;
+	font-size: 1.4em;
+	font-family: Gothic;
+	padding: 30px 10% 10% 0;
+	width: 70%;
+	margin-left: 30%;
+	margin-top: 30px;
+}
+
+.center-exp hr {
+	display: block;
+	float: right;
+	margin-right: 10%;
+	width: 3%;
+	border: 3px solid #1d6bba;
+}
+
+
+/* --------------- */
+
+
+
+.center-ser {
+	background-color: #c0ccd8;
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	opacity: 0.97;
+	padding-bottom: 100px;
+}
+
+
+
+.center-ser h2 {
+	color: #1d6bba;
+	font-size: 2.3em;
+	font-family: Gothic;
+	width: 70%;
+	padding: 5% 0 5% 10%;
+}
+
+
+
+
+/* ---------------- */
+
+
+
+/* ------------------- */
+
+
+
+.center-values {
+	background-color:  #c0ccd8;
+	border-top: 10px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 10px solid white;
+    opacity: 0.9;
+}
+
+.center-values p {
+	color:#1d6bba;
+	font-size: 1.4em;
+	font-family: Gothic;
+	padding: 10px 5px 50px 5px;
+	text-align: center;
+}
+
+
+
+.center-values h3{
+	text-align: center;
+	color: #1d6bba;
+	font-size: 2.3em;
+	font-family: Gothic;
+	padding-top: 50px;
+}
+
+.values-home h4 {
+	font-size: 2em;
+	text-align: center;
+	padding-top: 50px;
+	color: #1d6bba;
+	font-family: Gothic;
+}
+
+.values-home h5 {
+	font-size: 2.3em;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	color: #1d6bba;
+	font-family: Gothic;
+}
+
+/* ------------------- */
+
+.contact-home {
+	background-color:#c0ccd8;
+}
+
+
+.btn-contact1 {
+	border-radius: 0px;
+	transition: background-color 0.5s ease;
+	background-color: white;
+	color: #1d6bba;
+	font-family: Gothic;
+	font-size: 1.1em;
+	float: left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px solid white;
+}
+
+
+.btn-contact2 {
+	border-radius: 0px;
+	float: left;
+	transition: background-color 0.5s ease;
+	background-color: white;
+	color: #1d6bba;
+	font-family: Gothic;
+	font-size: 1.1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border: 1px solid white;
+}
+
+.btn-contact1:hover, .btn-contact2:hover {
+	background-color: white;
+	transition: background-color 0.5s ease;	
+	color: #1d6bba;
+	border: 1px solid white;
+}
+
+/* end home */
+
+/* services */
+
+
+.panel-group {
+	opacity: 1 !important;
+}
+
+.panel-body {
+	font-family: Gothic;
+	border: 2px solid #D1D1D1;
+	border-radius: 0px !important;
+	box-shadow: 1px 1px 15px #888888 !important;
+	opacity: 1 !important;
+}
+
+.panel-body p  {
+	color: #577ea5 !important;
+	font-family: Gothic !important;
+	font-size: 1.3em !important;
+}
+
+.panel-body h4 {
+	color: #577ea5 !important;
+	font-family: Gothic !important;
+	font-size: 1.4em !important;
+}
+
+.panel-title {
+	font-family: Gothic;
+	font-size: 1.5em;
+}
+
+.panel-heading {
+	background-color: #1d6bba !important;
+	color: white !important;
+	border: 2px solid #D1D1D1 !important;
+	border-radius: 0px !important;
+	box-shadow: 1px 1px 15px #888888 !important;
+	opacity: 1 !important;
+}
+
+/* end services */
+
+/* stories */
+
+.stories {
+	margin-top: 3%;
+}
+
+.story-block {
+	margin: 0 10px 20px 10px;
+
+}
+
+.head-story {
+		background-color: #1d6bba;
+}
+
+.stories h1 {
+	text-align: left;
+	padding-bottom: 30px;
+	color: #575756;
+	font-size: 3.1em;
+	font-family: Gothic;
+}
+
+.stories h2 {
+	text-align: left;
+	color: white;
+	font-size: 2.3em;
+	font-family: Gothic;
+	width:100%;
+}
+
+.body-story p {
+	text-align: left;
+	color: #575756;
+	font-size: 1.5em;
+	font-family: Gothic;
+	margin-top: 30px !important;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-stories {
+	margin-bottom: 30px;
+	margin-left: 10px;
+	border: 5px solid #1d6bba; 
+	border-radius: 0px;
+	border: 5px solid #1d6bba;
+	background-color: #577ea5;
+	transition: background-color 0.5s ease;
+	color: white;
+	font-family: Gothic;
+	font-size: 1.3em;
+}
+
+.btn-stories:hover {
+	border: 5px solid #577ea5;
+	background-color: white;
+	transition: background-color 0.5s ease;	
+	color: #1d6bba;
+}
+
+
+/* end stories */
+
+/* footer */
+
+.footer {
+	background-color: #575756;
+}
+
+footer {
+	text-align: center;
+	
+}
+
+footer p {
+	font-size: 1.2em;
+	font-family:Gothic;
+	color: white;
+	padding-top: 10px;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #577ea5;
+}
+
+/* footer */
+
+/* contact */
+
+.contact {
+		margin-top: 30px;
+		padding-bottom: 80px;
+}
+
+.contact h1 {
+	font-family: Gothic;
+	color:#577ea5; 
+	font-weight: bold;
+}
+
+.contact h2 {
+	font-family: Gothic;
+	color: #577ea5;
+	padding-top: 15px;
+}
+
+.contact p {
+	font-family: Gothic;
+	color:#577ea5; 
+	font-size: 1.3em;
+}
+
+.contact span {
+	font-size: 0.7em;
+}
+
+.portret {
+	width: 400px;
+	
+}
+
+.signature {
+	padding-bottom: 12%;
+}
+
+
+.forma input {
+	width: 250px;
+	margin-bottom: 30px;
+}
+
+
+.texta {
+	width: 250px;
+	height: 120px;
+}
+/* end contact */
+
+/* imprint */
+
+.imprint-home {
+	background-color: #e5e7e8;
+	border-top: 10px solid white;
+	margin-bottom: 10px;
+}
+
+.imprint-middle {
+	background-color: white;
+}
+
+.imprint-middle p {
+	color:#363636;
+	font-size: 1.2em;
+	font-family: Gothic;
+	width: 90%;
+	text-align: left;
+	padding: 10px 10px 10px 10px;
+}
+
+.imprint-middle h2 {
+	color: #363636;
+	text-align: left;
+	font-size: 2em;
+	width: 90%;
+	font-family: Gothic;
+	padding: 50px 10px 10px 10px;
+}
+
+.imprint-middle h2 {
+	color: black;
+	text-align: left;
+	font-size: 2.2em;
+	width: 90%;
+	font-family: Gothic;
+	padding: 50px 10px 10px 10px;
+}
+
+
+/* end imprint */
+
+.navbar {
+    position: fixed !important;
+    top: 0px;
+    width: 66.6%;
+    margin-left: 16.7%;
+}
+
+
